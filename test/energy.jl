@@ -1,5 +1,5 @@
 include("../headers.jl")
-using UnicodePlots
+using UnicodePlots, DelimitedFiles
 
 γvals = LinRange(0.0,1.0,21)
 nvals = Int.([1e2, 1e3, 1e4])

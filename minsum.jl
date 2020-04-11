@@ -17,12 +17,11 @@ function msiter!(FG::FactorGraph)
     return guesses(FG)
 end
 
-
 function guesses(FG::FactorGraph)
     return sign.(FG.b)
 end
 
-function ms!(FG::FactorGraph; maxiter=Int(1e3), nmin=50,
+function ms!(FG::FactorGraph; maxiter=Int(1e4), nmin=10,
     k=0.0) # Soft decimation factor
     newguesses = zeros(FG.n)
     oldguesses = guesses(FG)
@@ -47,4 +46,8 @@ end
 function energy(FG::FactorGraph, x=guesses(FG))
     return reduce(+,1 - FG.J[f]*prod(x[v] for v in FG.Fneigs[f])
         for f in eachindex(FG.Fneigs) if factdegree(FG,f)>0; init=0.0)
+end
+
+function spin2bool(s::Real)
+    return convert(Bool,(s+1)/2)
 end
