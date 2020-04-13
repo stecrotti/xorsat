@@ -10,9 +10,10 @@ A brief explanation of the main results follows
  The core size undergoes a first order phase transition at some density around 0.82 (for p=3), where it jumps to a value extensive w.r.t. N. Around 0.92 (for p=3), the SAT/UNSAT transition takes place: the core contains more constraints than variables.
  ![core]([https://github.com/stecrotti/xorsat/blob/master/images/core.png](https://github.com/stecrotti/xorsat/blob/master/images/core.png?raw=true "core")
  
+ Ciao
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTE5OTM0ODcsLTIwOTY3ODkyMjAsMT
-A1OTg5Mjk1MCwyMDgzNjc0OTMsMTAyNTg1NTczNV19
+eyJoaXN0b3J5IjpbMTQwMzE3MjUzNywtMjA5Njc4OTIyMCwxMD
+U5ODkyOTUwLDIwODM2NzQ5MywxMDI1ODU1NzM1XX0=
 -->
