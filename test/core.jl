@@ -26,4 +26,5 @@ plt.:xlabel("γ")
 plt.:legend(["Nc/N", "Mc/N"])
 plt.:title("Normalized number of nodes and hyperedges in the core\n
             N=$n. Average over $navg instances")
+tight_layout()
 plt.savefig("../images/core.png")
