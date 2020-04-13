@@ -2,10 +2,13 @@ include("../headers.jl")
 # using UnicodePlots
 using PyPlot
 
-γvals = LinRange(0.0,1.0,21)
-nvals = Int.([1e2, 1e3, 1e4])
+# γvals = LinRange(0.0,1.0,21)
+γvals = LinRange(0.0,1.0,3)
+# nvals = Int.([1e2, 1e3, 1e4])
+nvals = [10,20]
 p = 3
-navg = 200
+# navg = 200
+navg = 2
 k = 1e-3
 
 E = [zeros(length(γvals)) for _ in eachindex(nvals)]
@@ -23,6 +26,18 @@ for (i,n) in enumerate(nvals)
     println("  n=$(n) completed")
 end
 
+PyPlot.close("all")
+for (i,n) in enumerate(nvals)
+    plot(γvals, E[i], "o-")
+end
+
+plt.:title = "GS energy density"
+plt.:xlabel = "γ"
+plt.:ylabel = "Energy / n"
+plt.:legend("n = " .* string.(nvals))
+plt.savefig("../images/energy.png")
+
+
 # for (i,n) in enumerate(nvals)
 #     if i == 1
 #         global myplt = lineplot(γvals, E[i],
@@ -35,17 +50,6 @@ end
 #         name = "n="*string(nvals[i]))
 #     end
 # end
-
-for (i,n) in enumerate(nvals)
-    PyPlot.plot(γvals, E[i])
-    plt.:title = "GS energy density"
-    plt.:xlabel = "γ"
-    plt.:ylabel = "Energy / n"
-end
-plt.:legend("n = " .* string.(nvals))
-plt.savefig("../images/energy.png")
-
-
+# myplt
 
 print("\a")
-plt

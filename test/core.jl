@@ -4,7 +4,7 @@ using PyPlot
 γvals = LinRange(0.75,1.0,100)
 n = Int(1e4)
 p = 3
-navg = 100
+navg = 2
 Nc = zeros(length(γvals))
 Mc = zeros(length(γvals))
 for (j,γ) in enumerate(γvals)
@@ -24,5 +24,5 @@ plot(γvals, Nc/n, "ko", markersize=2)
 plot(γvals, Mc/n, "go", markersize=2)
 plt.:xlabel("γ")
 plt.:legend(["Nc/N", "Mc/N"])
-
+plt.:title("Normalized number of nodes and hyperedges in the core")
 plt.savefig("../images/core.png")
