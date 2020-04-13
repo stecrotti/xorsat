@@ -24,7 +24,5 @@ plot(γvals, Nc/n, "ko", markersize=2)
 plot(γvals, Mc/n, "go", markersize=2)
 plt.:xlabel("γ")
 plt.:legend(["Nc/N", "Mc/N"])
-plt.:title("Normalized number of nodes and hyperedges in the core\n
-            N=$n. Average over $navg instances")
-tight_layout()
+plt.:title("Normalized number of nodes and hyperedges in the core. N=$n. Average over $navg instances")
 plt.savefig("../images/core.png")
