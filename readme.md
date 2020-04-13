@@ -6,8 +6,8 @@ Belief Propagation equations are implemented in their Min-Sum form to look for s
 A brief explanation of the main results follows
 
 ### Leaf Removal algorithm
- Recursively remove from the hypergraph all leaves and the hyperedges they are attached to, until there is none left. The subgraph resulting at the end, called *core*, contains all those constraints 
+ Recursively remove from the hypergraph all leaves and the hyperedges they are attached to, until there is none left. The subgraph resulting at the end, called *core*, is the frozen part of the graph, meaning 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NjU1NDYzMSwxMDI1ODU1NzM1XX0=
+eyJoaXN0b3J5IjpbMjA4MzY3NDkzLDEwMjU4NTU3MzVdfQ==
 -->
