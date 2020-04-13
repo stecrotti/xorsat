@@ -58,13 +58,13 @@ end
 
 # Delete factor f
 # If f is not provided, delete one factor at random from the ones with degree > 0
-function deletefactor!(FG::FactorGraph, f::Int=rand(filter(ff -> factdegree(FG,ff)!=0, 1:FG.m)))
+function deletefact!(FG::FactorGraph, f::Int=rand(filter(ff -> factdegree(FG,ff)!=0, 1:FG.m)))
     for v in FG.Fneigs[f]
         # delete factor from its neighbors' lists
         deleteval!(FG.Vneigs[v],f)
     end
     # delete messages from f
-    FG.mfv[f] = 0.0
+    FG.mfv[f] = Float64[]
     # delete factor f
     FG.Fneigs[f] = []
     return f
@@ -90,7 +90,7 @@ function lr!(FG::FactorGraph)
     flag = false    # raised if there are still leaves to remove
     for v in eachindex(FG.Vneigs)
         if vardegree(FG,v)==1
-            deletefactor!(FG, FG.Vneigs[v][1])
+            deletefact!(FG, FG.Vneigs[v][1])
             flag = true
         end
     end
@@ -102,7 +102,7 @@ end
 function onelr!(FG::FactorGraph, idx::Vector{Int}=randperm(FG.n))
     for v in idx
         if vardegree(FG,v)==1
-            deletefactor!(FG, FG.Vneigs[v][1])
+            deletefact!(FG, FG.Vneigs[v][1])
             deletevar!(FG, v)
             return v
         end
@@ -111,7 +111,7 @@ function onelr!(FG::FactorGraph, idx::Vector{Int}=randperm(FG.n))
 end
 
 # The following 2 are used to get the number of variables or factors left in
-# the graph, which might be different from n,m i.e. the original ones
+# the graph, which might be different from n,m, i.e. the original ones
 
 function nvars(FG::FactorGraph)   # number of variables in the core
     Nvars = 0
