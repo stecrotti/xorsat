@@ -7,7 +7,8 @@ A brief explanation of the main results follows
 
 ### Leaf Removal algorithm
  Recursively remove from the hypergraph all leaves and the hyperedges they are attached to, until there is none left. The subgraph resulting at the end, called *core*, is the frozen part of the graph, formed by those variable whose value is forced by the rigidness of the system.
- - Dynamic transition: The core size undergoes a first order phase transition at some density around 0.82 (for p=3), where it jumps to a value extensive w.r.t. N. Around 0.92 (for p=3), the SAT/UNSAT transition takes place: the core contains more constraints than variables.
+ - **Dynamic transition**: The core size undergoes a first order phase transition at some density around 0.82 (for p=3), where it jumps to a value extensive with the number of variables N. 
+ - **SAT/UNSAT transition**: Around 0.92 (for p=3),  the core contains more constraints than variables.
  ![core](https://github.com/stecrotti/xorsat/blob/master/images/core.png?raw=true "core")
  
  ### Energy
@@ -16,6 +17,6 @@ A brief explanation of the main results follows
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMTMyNDY2MiwtMjA5Njc4OTIyMCwxMD
+eyJoaXN0b3J5IjpbLTY2MTM3Mjk1NCwtMjA5Njc4OTIyMCwxMD
 U5ODkyOTUwLDIwODM2NzQ5MywxMDI1ODU1NzM1XX0=
 -->
