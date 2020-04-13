@@ -12,11 +12,12 @@ A brief explanation of the main results follows
  ![core](https://github.com/stecrotti/xorsat/blob/master/images/core.png?raw=true "core")
  
  ### Energy
- Energy in the p-spin Ising model corresponds to the number of unsatisfied constraints in the XOR-SAT formula. Belief Propagation is able to find solutions only up to the dynamic transition aroun
+ Energy in the p-spin Ising model corresponds to the number of unsatisfied constraints in the XOR-SAT formula. Belief Propagation is able to find solutions only up to the dynamic transition around 0.82, abovmore sophisticated techniques like Survey Propagation are needed.
+  
  
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNjEzMTM2OSwtMjA5Njc4OTIyMCwxMD
-U5ODkyOTUwLDIwODM2NzQ5MywxMDI1ODU1NzM1XX0=
+eyJoaXN0b3J5IjpbLTE2Nzg0MDc0MDcsLTIwOTY3ODkyMjAsMT
+A1OTg5Mjk1MCwyMDgzNjc0OTMsMTAyNTg1NTczNV19
 -->
