@@ -7,9 +7,9 @@ A brief explanation of the main results follows
 
 ### Leaf Removal algorithm
  Recursively remove from the hypergraph all leaves and the hyperedges they are attached to, until there is none left. The subgraph resulting at the end, called *core*, is the frozen part of the graph, formed by those variable whose value is forced by the rigidness of the system.
- The core size undergoes a (first order) phase transition at some density \gamma_d
+ The core size undergoes a (first order phase transition at some density around 0.82 (for p=3)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTY3ODkyMjAsMTA1OTg5Mjk1MCwyMD
-gzNjc0OTMsMTAyNTg1NTczNV19
+eyJoaXN0b3J5IjpbLTEyMjg2NTQyNzQsLTIwOTY3ODkyMjAsMT
+A1OTg5Mjk1MCwyMDgzNjc0OTMsMTAyNTg1NTczNV19
 -->
