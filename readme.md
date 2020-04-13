@@ -5,8 +5,9 @@ and XORSAT Problems*, Journal of Statistical Physics, 2003](http://chimera.roma1
 Belief Propagation equations are implemented in their Min-Sum form to look for solutions to XOR-SAT instances drawn from a random ensemble. The problem is equivalent to that of finding the Ground State for a $p$-spin Ising model, i.e. an Ising model where spins interact not in pairs but in $p$-uples.
 A brief explanation of the main results follows
 
- - ### Leaf-
+ - ### Leaf Removal algorithm
+ Recursively remove from the hypergraph all leaves and the hyperedges they are attached to. The subgraph that is left is called *core*. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTUyNDM4NzksMTAyNTg1NTczNV19
+eyJoaXN0b3J5IjpbLTQ4MjU4OTgzOCwxMDI1ODU1NzM1XX0=
 -->
