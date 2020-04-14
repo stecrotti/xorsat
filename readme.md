@@ -19,7 +19,7 @@ A brief explanation of the main results follows
  ------------
  ### Some links
  Julia Language [Julia](https://julialang.org/)
- 
+ Phase transitions in combinatorial optimization [Simplest random K-satisfiability problem](https://arxiv.org/abs/cond-mat/0011181)
  Survey Propagation [SP](https://arxiv.org/abs/cs/0212002)
  
  
@@ -29,8 +29,8 @@ A brief explanation of the main results follows
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzAzMjExMjksLTEyNzAzMjExMjksLT
-E5MjM3NjE5NjAsMjcwNDM5NjM4LC00ODQ4NjExMzksMTEyNDMz
-NDYzMSwtOTU1ODA1ODQxLC0yMDk2Nzg5MjIwLDEwNTk4OTI5NT
-AsMjA4MzY3NDkzLDEwMjU4NTU3MzVdfQ==
+eyJoaXN0b3J5IjpbMTQ2NDQwNzMwNCwtMTI3MDMyMTEyOSwtMT
+kyMzc2MTk2MCwyNzA0Mzk2MzgsLTQ4NDg2MTEzOSwxMTI0MzM0
+NjMxLC05NTU4MDU4NDEsLTIwOTY3ODkyMjAsMTA1OTg5Mjk1MC
+wyMDgzNjc0OTMsMTAyNTg1NTczNV19
 -->
