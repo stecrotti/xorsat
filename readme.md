@@ -1,5 +1,5 @@
 # XOR-SAT formulas and p-spin Ising model
-This was produced as a project for a university course in Fall '19. 
+This work was produced for a university course in Fall '19. 
 It is based on [M. Mézard, F. Ricci-Tersenghi, R. Zecchina, *Two Solutions to Diluted p-Spin Models
 and XORSAT Problems*, Journal of Statistical Physics, 2003](http://chimera.roma1.infn.it/FEDERICO/Publications_files/2003_JSP_111_505.pdf).
 
@@ -26,7 +26,7 @@ A brief explanation of the main results follows
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDA0MzMwMzksMjcwNDM5NjM4LC00OD
+eyJoaXN0b3J5IjpbLTE5MjM3NjE5NjAsMjcwNDM5NjM4LC00OD
 Q4NjExMzksMTEyNDMzNDYzMSwtOTU1ODA1ODQxLC0yMDk2Nzg5
 MjIwLDEwNTk4OTI5NTAsMjA4MzY3NDkzLDEwMjU4NTU3MzVdfQ
 ==
