@@ -22,7 +22,7 @@ end
 
 function adjmat(FG::FactorGraph)
     A = zeros(Int,FG.m, FG.n)
-    for f in 1:FG.M
+    for f in 1:FG.m
         for v in FG.Fneigs[f]
             A[f,v] = 1
         end
