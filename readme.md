@@ -13,7 +13,7 @@ A brief explanation of the main results follows
  - **SAT/UNSAT transition**: From![gammac](https://latex.codecogs.com/gif.latex?%5Cgamma_c) (~0.92 for p=3) up,  the core contains more constraints than variables and the probability of an instance being satisfiable becomes exponentially small ![core](https://github.com/stecrotti/xorsat/blob/master/images/core.png?raw=true "Core")
  
  ### Energy
- Energy in the p-spin Ising model corresponds to the number of unsatisfied constraints in the XOR-SAT formula. Belief Propagation is able to find solutions only up to the dynamic transition at ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d), above which more sophisticated techniques like Survey Propagation are needed
+ Energy in the p-spin Ising model corresponds to the number of unsatisfied constraints in the XOR-SAT formula. Belief Propagation is able to find solutions only up to the dynamic transition at ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d), above which more sophisticated techniques like Survey Propagation are needed. The reason for this is that at ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d) the 
  ![energy](https://github.com/stecrotti/xorsat/blob/master/images/energy.png?raw=true  "Energy")
  
  ------------
@@ -29,8 +29,8 @@ A brief explanation of the main results follows
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMjcwNzk3NCwtMTI3MDMyMTEyOSwtMT
-kyMzc2MTk2MCwyNzA0Mzk2MzgsLTQ4NDg2MTEzOSwxMTI0MzM0
-NjMxLC05NTU4MDU4NDEsLTIwOTY3ODkyMjAsMTA1OTg5Mjk1MC
-wyMDgzNjc0OTMsMTAyNTg1NTczNV19
+eyJoaXN0b3J5IjpbLTE1MjE4ODM2LDIxMjI3MDc5NzQsLTEyNz
+AzMjExMjksLTE5MjM3NjE5NjAsMjcwNDM5NjM4LC00ODQ4NjEx
+MzksMTEyNDMzNDYzMSwtOTU1ODA1ODQxLC0yMDk2Nzg5MjIwLD
+EwNTk4OTI5NTAsMjA4MzY3NDkzLDEwMjU4NTU3MzVdfQ==
 -->
