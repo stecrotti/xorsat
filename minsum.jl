@@ -47,7 +47,3 @@ function energy(FG::FactorGraph, x=guesses(FG))
     return reduce(+,1 - FG.J[f]*prod(x[v] for v in FG.Fneigs[f])
         for f in eachindex(FG.Fneigs) if factdegree(FG,f)>0; init=0.0)
 end
-
-function spin2bool(s::Real)
-    return convert(Bool,(s+1)/2)
-end
