@@ -13,7 +13,13 @@ A brief explanation of the main results follows
  - **SAT/UNSAT transition**: From![gammac](https://latex.codecogs.com/gif.latex?%5Cgamma_c) (~0.92 for p=3) up,  the core contains more constraints than variables and the probability of an instance being satisfiable becomes exponentially small ![core](https://github.com/stecrotti/xorsat/blob/master/images/core.png?raw=true "Core")
  
  ### Energy
- Energy in the p-spin Ising model corresponds to the number of unsatisfied constraints in the XOR-SAT formula. Belief Propagation is able to find solutions only up to the dynamic transition at ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d), above which more sophisticated techniques like Survey Propagation are needed. The reason for this is that at ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d) the 
+ Energy in the p-spin Ising model corresponds to the number of unsatisfied constraints in the XOR-SAT formula. for γ < γd, all solutions are concentrated
+in one cluster, meaning that each one can be reached from any other with a finite
+number of spin flips. Therefore BP, which can be considered as a local message-passing
+algorithm, is able to find solutions. Instead, for γd < γ < γc, systems are still solvable,
+but solutions are scattered into an extensive (with respect to N) number of clusters,
+therefore more sophisticated techniques such as Survey Propagation are required in order
+to approximate the actual behavior.
  ![energy](https://github.com/stecrotti/xorsat/blob/master/images/energy.png?raw=true  "Energy")
  
  ------------
@@ -29,8 +35,8 @@ A brief explanation of the main results follows
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjE4ODM2LDIxMjI3MDc5NzQsLTEyNz
-AzMjExMjksLTE5MjM3NjE5NjAsMjcwNDM5NjM4LC00ODQ4NjEx
-MzksMTEyNDMzNDYzMSwtOTU1ODA1ODQxLC0yMDk2Nzg5MjIwLD
-EwNTk4OTI5NTAsMjA4MzY3NDkzLDEwMjU4NTU3MzVdfQ==
+eyJoaXN0b3J5IjpbMTU0MzMzMTYxNCwyMTIyNzA3OTc0LC0xMj
+cwMzIxMTI5LC0xOTIzNzYxOTYwLDI3MDQzOTYzOCwtNDg0ODYx
+MTM5LDExMjQzMzQ2MzEsLTk1NTgwNTg0MSwtMjA5Njc4OTIyMC
+wxMDU5ODkyOTUwLDIwODM2NzQ5MywxMDI1ODU1NzM1XX0=
 -->
