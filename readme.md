@@ -13,11 +13,7 @@ A brief explanation of the main results follows
  - **SAT/UNSAT transition**: From![gammac](https://latex.codecogs.com/gif.latex?%5Cgamma_c) (~0.92 for p=3) up,  the core contains more constraints than variables and the probability of an instance being satisfiable becomes exponentially small ![core](https://github.com/stecrotti/xorsat/blob/master/images/core.png?raw=true "Core")
  
  ### Energy
- Energy in the p-spin Ising model corresponds to the number of unsatisfied constraints in the XOR-SAT formula. for ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma)  < ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d), all solutions are concentrated in one cluster, meaning that each one can be reached from any other with a finite
-number of spin flips. Therefore BP, which can be considered as a local message-passing
-algorithm, is able to find solutions. Instead, for γd < γ < γc, systems are still solvable,
-but solutions are scattered into an extensive (with respect to N) number of clusters,
-therefore more sophisticated techniques such as Survey Propagation are required in order
+ Energy in the p-spin Ising model corresponds to the number of unsatisfied constraints in the XOR-SAT formula. for ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma)  < ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d), all solutions are concentrated in one cluster, meaning that each one can be reached from any other with a finite number of spin flips. In this regime BP, which is a local message-passing algorithm, is able to find solutions. Instead, for ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d) < ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma) < ![gammac](https://latex.codecogs.com/gif.latex?%5Cgamma_c), systems are still solvable, but solutions are scattered into an extensive (with respect to N) number of clusters, therefore more sophisticated techniques such as Survey Propagation are required in order
 to approximate the actual behavior.
  ![energy](https://github.com/stecrotti/xorsat/blob/master/images/energy.png?raw=true  "Energy")
  
@@ -34,7 +30,7 @@ to approximate the actual behavior.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNzEyMTIwMSwxNTQzMzMxNjE0LDIxMj
+eyJoaXN0b3J5IjpbMTQ1Mzc1NTkyNCwxNTQzMzMxNjE0LDIxMj
 I3MDc5NzQsLTEyNzAzMjExMjksLTE5MjM3NjE5NjAsMjcwNDM5
 NjM4LC00ODQ4NjExMzksMTEyNDMzNDYzMSwtOTU1ODA1ODQxLC
 0yMDk2Nzg5MjIwLDEwNTk4OTI5NTAsMjA4MzY3NDkzLDEwMjU4
