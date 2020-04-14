@@ -9,11 +9,11 @@ A brief explanation of the main results follows
 ### Leaf Removal algorithm
  Recursively remove from the graph all leaves and the factors (also called hyperedges) they are attached to, until there is none left. The subgraph resulting at the end, called *core*, is the frozen part of the graph, formed by those variable whose value is forced by the rigidness of the system.
  The density ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma) is the ratio of number of constraints and number of variables. As the density varies from 0 to 1 and beyond, the system undergoes two phase transitions
- - **Dynamic transition**: At some density ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma_d) (~0.82 for p=3), the core size jumps from 0 to a value extensive with N, the number of variables 
- - **SAT/UNSAT transition**: From![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma_c) (~0.92 for p=3) up,  the core contains more constraints than variables and the SAT probability becomes exponentially small. ![core](https://github.com/stecrotti/xorsat/blob/master/images/core.png?raw=true "Core")
+ - **Dynamic transition**: At some density ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d) (~0.82 for p=3), the core size jumps from 0 to a value extensive with N, the number of variables 
+ - **SAT/UNSAT transition**: From![gammac](https://latex.codecogs.com/gif.latex?%5Cgamma_c) (~0.92 for p=3) up,  the core contains more constraints than variables and the SAT probability becomes exponentially small. ![core](https://github.com/stecrotti/xorsat/blob/master/images/core.png?raw=true "Core")
  
  ### Energy
- Energy in the p-spin Ising model corresponds to the number of unsatisfied constraints in the XOR-SAT formula. Belief Propagation is able to find solutions only up to the dynamic transition around 0.82, above which more sophisticated techniques like Survey Propagation are needed.
+ Energy in the p-spin Ising model corresponds to the number of unsatisfied constraints in the XOR-SAT formula. Belief Propagation is able to find solutions only up to the dynamic transition at ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d), above which more sophisticated techniques like Survey Propagation are needed.
  ![energy](https://github.com/stecrotti/xorsat/blob/master/images/energy.png?raw=true  "Energy")
  
  
@@ -23,7 +23,7 @@ A brief explanation of the main results follows
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMjIxNTczNiwyNzA0Mzk2MzgsLTQ4ND
-g2MTEzOSwxMTI0MzM0NjMxLC05NTU4MDU4NDEsLTIwOTY3ODky
-MjAsMTA1OTg5Mjk1MCwyMDgzNjc0OTMsMTAyNTg1NTczNV19
+eyJoaXN0b3J5IjpbODAwODU2OTkwLDI3MDQzOTYzOCwtNDg0OD
+YxMTM5LDExMjQzMzQ2MzEsLTk1NTgwNTg0MSwtMjA5Njc4OTIy
+MCwxMDU5ODkyOTUwLDIwODM2NzQ5MywxMDI1ODU1NzM1XX0=
 -->
