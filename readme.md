@@ -2,6 +2,7 @@
 This was produced as a project for a university course in Fall '19. 
 It is based on [M. Mézard, F. Ricci-Tersenghi, R. Zecchina, *Two Solutions to Diluted p-Spin Models
 and XORSAT Problems*, Journal of Statistical Physics, 2003](http://chimera.roma1.infn.it/FEDERICO/Publications_files/2003_JSP_111_505.pdf).
+
 Belief Propagation equations are implemented in their Min-Sum form to look for solutions to XOR-SAT instances drawn from a random ensemble. The problem is equivalent to that of finding the Ground State for a p-spin Ising model, i.e. an Ising model where spins interact not in pairs but in p-uples.
 A brief explanation of the main results follows
 ### Leaf Removal algorithm
@@ -21,7 +22,7 @@ A brief explanation of the main results follows
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NDg2MTEzOSwxMTI0MzM0NjMxLC05NT
-U4MDU4NDEsLTIwOTY3ODkyMjAsMTA1OTg5Mjk1MCwyMDgzNjc0
-OTMsMTAyNTg1NTczNV19
+eyJoaXN0b3J5IjpbNTM5NDg2MjM1LC00ODQ4NjExMzksMTEyND
+MzNDYzMSwtOTU1ODA1ODQxLC0yMDk2Nzg5MjIwLDEwNTk4OTI5
+NTAsMjA4MzY3NDkzLDEwMjU4NTU3MzVdfQ==
 -->
