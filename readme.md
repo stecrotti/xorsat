@@ -8,7 +8,7 @@ The problem is equivalent to that of finding the Ground State for a p-spin Ising
 A brief explanation of the main results follows
 ### Leaf Removal algorithm
  Recursively remove from the graph all leaves and the factors (also called hyperedges) they are attached to, until there is none left. The subgraph resulting at the end, called *core*, is the frozen part of the graph, formed by those variable whose value is forced by the rigidness of the system.
- The density  the ratio of number of constraints and number of variables. As the density varies from 0 to 1 and beyond, the system undergoes two phase transitions
+ The density ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma) is the ratio of number of constraints and number of variables. As the density varies from 0 to 1 and beyond, the system undergoes two phase transitions
  - **Dynamic transition**: At some density ~0.82 (for p=3), the core size jumps from 0 to a value extensive with N, the number of variables 
  - **SAT/UNSAT transition**: From ~0.92 (for p=3) on,  the core contains more constraints than variables and the probability of satisfiability becomes exponentially small. ![core](https://github.com/stecrotti/xorsat/blob/master/images/core.png?raw=true "Core")
  
@@ -23,7 +23,7 @@ A brief explanation of the main results follows
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTA3NDQxOSwyNzA0Mzk2MzgsLTQ4ND
+eyJoaXN0b3J5IjpbLTg3MzU2OTQ5MSwyNzA0Mzk2MzgsLTQ4ND
 g2MTEzOSwxMTI0MzM0NjMxLC05NTU4MDU4NDEsLTIwOTY3ODky
 MjAsMTA1OTg5Mjk1MCwyMDgzNjc0OTMsMTAyNTg1NTczNV19
 -->
