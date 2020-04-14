@@ -9,7 +9,7 @@ A brief explanation of the main results follows
  Recursively remove from the hypergraph all leaves and the hyperedges they are attached to, until there is none left. The subgraph resulting at the end, called *core*, is the frozen part of the graph, formed by those variable whose value is forced by the rigidness of the system.
  Call *density* the ratio of number of constraints and number of variables. As the density varies from 0 to 1 and beyond, the system undergoes two phase transitions
  - **Dynamic transition**: At some density around 0.82 (for p=3), the core size jumps to a value extensive with the number of variables N. 
- - **SAT/UNSAT transition**: From ~0.92 (for p=3),  the core contains more constraints than variables and the probability of satisfiability becomes exponentially small. ![core](https://github.com/stecrotti/xorsat/blob/master/images/core.png?raw=true "Core")
+ - **SAT/UNSAT transition**: From ~0.92 (for p=3) on,  the core contains more constraints than variables and the probability of satisfiability becomes exponentially small. ![core](https://github.com/stecrotti/xorsat/blob/master/images/core.png?raw=true "Core")
  
  ### Energy
  Energy in the p-spin Ising model corresponds to the number of unsatisfied constraints in the XOR-SAT formula. Belief Propagation is able to find solutions only up to the dynamic transition around 0.82, above which more sophisticated techniques like Survey Propagation are needed.
@@ -22,7 +22,7 @@ A brief explanation of the main results follows
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkwNjIzMTkzLC00ODQ4NjExMzksMTEyND
-MzNDYzMSwtOTU1ODA1ODQxLC0yMDk2Nzg5MjIwLDEwNTk4OTI5
-NTAsMjA4MzY3NDkzLDEwMjU4NTU3MzVdfQ==
+eyJoaXN0b3J5IjpbMTc0MTg4MzUzNCwtNDg0ODYxMTM5LDExMj
+QzMzQ2MzEsLTk1NTgwNTg0MSwtMjA5Njc4OTIyMCwxMDU5ODky
+OTUwLDIwODM2NzQ5MywxMDI1ODU1NzM1XX0=
 -->
