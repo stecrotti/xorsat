@@ -1,6 +1,7 @@
 # XOR-SAT formulas and p-spin Ising model
 This work was produced for a university course in Fall '19. 
-It is based on [M. Mézard, F. Ricci-Tersenghi, R. Zecchina, *Alternative solutions to diluted p-spin models and XORSAT problems*, Journal of Statistical Physics, 2003](http://chimera.roma1.infn.it/FEDERICO/Publications_files/2003_JSP_111_505.pdf).
+It is based on [M. Mézard, F. Ricci-Tersenghi, R. Zecchina, *Two Solutions to Diluted p-Spin Models
+and XORSAT Problems*, Journal of Statistical Physics, 2003](http://chimera.roma1.infn.it/FEDERICO/Publications_files/2003_JSP_111_505.pdf).
 
 Belief Propagation equations are implemented in their Min-Sum form to look for solutions to XOR-SAT instances drawn from a random ensemble in the thermodynamic limit of ![Ninf](https://latex.codecogs.com/gif.latex?N%5Crightarrow%20%5Cinfty) variables. 
 The problem is equivalent to that of finding the Ground State for a p-spin Ising model (an Ising model where spins interact not in pairs but in p-uples) defined of a factor graph.
@@ -28,8 +29,8 @@ A brief explanation of the main results follows
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1ODU3OTQ4MCwtMTI3MDMyMTEyOSwtMT
-kyMzc2MTk2MCwyNzA0Mzk2MzgsLTQ4NDg2MTEzOSwxMTI0MzM0
-NjMxLC05NTU4MDU4NDEsLTIwOTY3ODkyMjAsMTA1OTg5Mjk1MC
-wyMDgzNjc0OTMsMTAyNTg1NTczNV19
+eyJoaXN0b3J5IjpbLTEyNzAzMjExMjksLTEyNzAzMjExMjksLT
+E5MjM3NjE5NjAsMjcwNDM5NjM4LC00ODQ4NjExMzksMTEyNDMz
+NDYzMSwtOTU1ODA1ODQxLC0yMDk2Nzg5MjIwLDEwNTk4OTI5NT
+AsMjA4MzY3NDkzLDEwMjU4NTU3MzVdfQ==
 -->
