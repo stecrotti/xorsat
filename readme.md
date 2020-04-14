@@ -17,7 +17,7 @@ A brief explanation of the main results follows
  ![energy](https://github.com/stecrotti/xorsat/blob/master/images/energy.png?raw=true  "Energy")
  
  ------------
- Julia Language [Julia]([https://julialang.org/](https://julialang.org/))
+ Julia Language [Julia]([https://julialang.org/])
  
  
 
@@ -26,8 +26,8 @@ A brief explanation of the main results follows
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjM3NjE5NjAsMjcwNDM5NjM4LC00OD
-Q4NjExMzksMTEyNDMzNDYzMSwtOTU1ODA1ODQxLC0yMDk2Nzg5
-MjIwLDEwNTk4OTI5NTAsMjA4MzY3NDkzLDEwMjU4NTU3MzVdfQ
-==
+eyJoaXN0b3J5IjpbMjEzNDQ5MjEyMCwtMTkyMzc2MTk2MCwyNz
+A0Mzk2MzgsLTQ4NDg2MTEzOSwxMTI0MzM0NjMxLC05NTU4MDU4
+NDEsLTIwOTY3ODkyMjAsMTA1OTg5Mjk1MCwyMDgzNjc0OTMsMT
+AyNTg1NTczNV19
 -->
