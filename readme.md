@@ -8,7 +8,7 @@ The problem is equivalent to that of finding the Ground State for a p-spin Ising
 A brief explanation of the main results follows
 ### Leaf Removal algorithm
  Recursively remove from the graph all leaves and the factors (also called hyperedges) they are attached to, until there is no leaf left. The subgraph resulting at the end, called *core*, is the frozen part of the graph, formed by those variable whose value is forced by the rigidness of the system.
- The density ![gamma](https://github.com/stecrotti/xorsat/blob/master/latex/gamma.gif?raw=true)is the ratio of number of constraints and number of variables. As the density varies from 0 to 1 and beyond, the system undergoes two phase transitions
+ The density ![gamma](https://github.com/stecrotti/xorsat/blob/master/latex/gamma.gif?raw=true) is the ratio of number of constraints and number of variables. As the density varies from 0 to 1 and beyond, the system undergoes two phase transitions
  - **Dynamic transition**: At some density ![gammad](https://github.com/stecrotti/xorsat/blob/master/latex/gammad.gif?raw=true) (~0.82 for p=3), the core size jumps from 0 to a value extensive with N, the number of variables 
  - **SAT/UNSAT transition**: From ![gammac](https://github.com/stecrotti/xorsat/blob/master/latex/gammac.gif?raw=true) (~0.92 for p=3) up,  the core contains more constraints than variables and the probability of an instance being satisfiable becomes exponentially small ![core](https://github.com/stecrotti/xorsat/blob/master/images/core.png?raw=true "Core")
  
@@ -32,11 +32,11 @@ to approximate the actual behavior.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzE4MDMzNjUsLTM1NDcwMTg4OCwxMz
-g4NzIwMjIxLDk2NzgxODUwMCwtMTgyMDI0MjE4MiwxMjAzMjE5
-MjQzLC05ODIwNjk0OTAsNDM2OTI5MjYyLC01MTcxMDYzNiwtMT
-EzNTU2NzIzNSwtODE3NDczNDk1LDE0NTM3NTU5MjQsMTU0MzMz
-MTYxNCwyMTIyNzA3OTc0LC0xMjcwMzIxMTI5LC0xOTIzNzYxOT
-YwLDI3MDQzOTYzOCwtNDg0ODYxMTM5LDExMjQzMzQ2MzEsLTk1
-NTgwNTg0MV19
+eyJoaXN0b3J5IjpbMTYxMjc1OTI2OSwtMTE3MTgwMzM2NSwtMz
+U0NzAxODg4LDEzODg3MjAyMjEsOTY3ODE4NTAwLC0xODIwMjQy
+MTgyLDEyMDMyMTkyNDMsLTk4MjA2OTQ5MCw0MzY5MjkyNjIsLT
+UxNzEwNjM2LC0xMTM1NTY3MjM1LC04MTc0NzM0OTUsMTQ1Mzc1
+NTkyNCwxNTQzMzMxNjE0LDIxMjI3MDc5NzQsLTEyNzAzMjExMj
+ksLTE5MjM3NjE5NjAsMjcwNDM5NjM4LC00ODQ4NjExMzksMTEy
+NDMzNDYzMV19
 -->
