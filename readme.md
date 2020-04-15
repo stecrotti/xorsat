@@ -9,7 +9,7 @@ A brief explanation of the main results follows
 ### Leaf Removal algorithm
  Recursively remove from the graph all leaves and the factors (also called hyperedges) they are attached to, until there is none left. The subgraph resulting at the end, called *core*, is the frozen part of the graph, formed by those variable whose value is forced by the rigidness of the system.
  The density ![gamma](https://github.com/stecrotti/xorsat/blob/master/latex/gamma.gif?raw=true)is the ratio of number of constraints and number of variables. As the density varies from 0 to 1 and beyond, the system undergoes two phase transitions
- - **Dynamic transition**: At some density ![gammad](https://github.com/stecrotti/xorsat/blob/master/latex/gammad.gif?raw=true)(~0.82 for p=3), the core size jumps from 0 to a value extensive with N, the number of variables 
+ - **Dynamic transition**: At some density ![gammad](https://github.com/stecrotti/xorsat/blob/master/latex/gammad.gif?raw=true) (~0.82 for p=3), the core size jumps from 0 to a value extensive with N, the number of variables 
  - **SAT/UNSAT transition**: From ![gammac](https://github.com/stecrotti/xorsat/blob/master/latex/gammac.gif?raw=true) (~0.92 for p=3) up,  the core contains more constraints than variables and the probability of an instance being satisfiable becomes exponentially small ![core](https://github.com/stecrotti/xorsat/blob/master/images/core.png?raw=true "Core")
  
  ### Energy
@@ -32,7 +32,7 @@ to approximate the actual behavior.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MjIyODA4MSw5Njc4MTg1MDAsLTE4Mj
+eyJoaXN0b3J5IjpbMTM4ODcyMDIyMSw5Njc4MTg1MDAsLTE4Mj
 AyNDIxODIsMTIwMzIxOTI0MywtOTgyMDY5NDkwLDQzNjkyOTI2
 MiwtNTE3MTA2MzYsLTExMzU1NjcyMzUsLTgxNzQ3MzQ5NSwxND
 UzNzU1OTI0LDE1NDMzMzE2MTQsMjEyMjcwNzk3NCwtMTI3MDMy
