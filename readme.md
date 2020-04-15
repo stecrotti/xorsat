@@ -4,7 +4,7 @@ It is based on [M. Mézard, F. Ricci-Tersenghi, R. Zecchina, *Two Solutions to D
 and XORSAT Problems*, Journal of Statistical Physics, 2003](http://chimera.roma1.infn.it/FEDERICO/Publications_files/2003_JSP_111_505.pdf).
 
 Belief Propagation equations are implemented in their Min-Sum form to look for solutions to XOR-SAT instances drawn from a random ensemble in the thermodynamic limit of ![Ninf](https://latex.codecogs.com/gif.latex?N%5Crightarrow%20%5Cinfty) variables. 
-The problem is equivalent to that of finding the Ground State for a p-spin Ising model (an Ising model where spins interact not in pairs but in p-uples) defined of a factor graph.
+The problem is equivalent to that of finding the Ground State for a p-spin Ising model (an Ising model where spins interact not in pairs but in p-uples) defined over a factor graph.
 A brief explanation of the main results follows
 ### Leaf Removal algorithm
  Recursively remove from the graph all leaves and the factors (also called hyperedges) they are attached to, until there is none left. The subgraph resulting at the end, called *core*, is the frozen part of the graph, formed by those variable whose value is forced by the rigidness of the system.
@@ -32,11 +32,11 @@ to approximate the actual behavior.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4ODcyMDIyMSw5Njc4MTg1MDAsLTE4Mj
-AyNDIxODIsMTIwMzIxOTI0MywtOTgyMDY5NDkwLDQzNjkyOTI2
-MiwtNTE3MTA2MzYsLTExMzU1NjcyMzUsLTgxNzQ3MzQ5NSwxND
-UzNzU1OTI0LDE1NDMzMzE2MTQsMjEyMjcwNzk3NCwtMTI3MDMy
-MTEyOSwtMTkyMzc2MTk2MCwyNzA0Mzk2MzgsLTQ4NDg2MTEzOS
-wxMTI0MzM0NjMxLC05NTU4MDU4NDEsLTIwOTY3ODkyMjAsMTA1
-OTg5Mjk1MF19
+eyJoaXN0b3J5IjpbLTM1NDcwMTg4OCwxMzg4NzIwMjIxLDk2Nz
+gxODUwMCwtMTgyMDI0MjE4MiwxMjAzMjE5MjQzLC05ODIwNjk0
+OTAsNDM2OTI5MjYyLC01MTcxMDYzNiwtMTEzNTU2NzIzNSwtOD
+E3NDczNDk1LDE0NTM3NTU5MjQsMTU0MzMzMTYxNCwyMTIyNzA3
+OTc0LC0xMjcwMzIxMTI5LC0xOTIzNzYxOTYwLDI3MDQzOTYzOC
+wtNDg0ODYxMTM5LDExMjQzMzQ2MzEsLTk1NTgwNTg0MSwtMjA5
+Njc4OTIyMF19
 -->
