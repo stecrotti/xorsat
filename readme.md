@@ -13,7 +13,7 @@ A brief explanation of the main results follows
  - **SAT/UNSAT transition**: From ![gammac](https://latex.codecogs.com/gif.latex?%5Cgamma_c) (~0.92 for p=3) up,  the core contains more constraints than variables and the probability of an instance being satisfiable becomes exponentially small ![core](https://github.com/stecrotti/xorsat/blob/master/images/core.png?raw=true "Core")
  
  ### Energy
- Energy in the p-spin Ising model corresponds to the number of unsatisfied constraints in the XOR-SAT formula. For ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma)  < ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d), all solutions are concentrated in one cluster, meaning that each one can be reached from any other with a finite number of spin flips. In this regime BP, which is a local algorithm, is able to find solutions. Instead, for ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d) < ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma) < ![gammac](https://latex.codecogs.com/gif.latex?%5Cgamma_C), systems are still solvable, but solutions are scattered into an extensive (with respect to N) number of clusters, therefore more sophisticated techniques such as Survey Propagation are required in order
+ Energy in the p-spin Ising model corresponds to the number of unsatisfied constraints in the XOR-SAT formula. For ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma)  < ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d), all solutions are concentrated in one cluster, meaning that each one can be reached from any other with a finite number of spin flips. In this regime BP, which is a local algorithm, is able to find solutions. Instead, for ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d) < ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma) < ![gammac](https://latex.codecogs.com/gif.latex?%5Cgamma_c) , systems are still solvable, but solutions are scattered into an extensive (with respect to N) number of clusters, therefore more sophisticated techniques such as Survey Propagation are required in order
 to approximate the actual behavior.
 ![energy](https://github.com/stecrotti/xorsat/blob/master/images/energy_light.png?raw=true  "Energy")
  
@@ -22,6 +22,8 @@ to approximate the actual behavior.
  - Julia Language [Julia](https://julialang.org/)
 - Phase transitions in combinatorial optimization [Simplest random K-satisfiability problem](https://arxiv.org/abs/cond-mat/0011181)
 - Survey Propagation [Survey propagation: an algorithm for satisfiability](https://arxiv.org/abs/cs/0212002)
+
+
  
  
 
@@ -30,10 +32,11 @@ to approximate the actual behavior.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MjA2OTQ5MCw0MzY5MjkyNjIsLTUxNz
-EwNjM2LC0xMTM1NTY3MjM1LC04MTc0NzM0OTUsMTQ1Mzc1NTky
-NCwxNTQzMzMxNjE0LDIxMjI3MDc5NzQsLTEyNzAzMjExMjksLT
-E5MjM3NjE5NjAsMjcwNDM5NjM4LC00ODQ4NjExMzksMTEyNDMz
-NDYzMSwtOTU1ODA1ODQxLC0yMDk2Nzg5MjIwLDEwNTk4OTI5NT
-AsMjA4MzY3NDkzLDEwMjU4NTU3MzVdfQ==
+eyJoaXN0b3J5IjpbLTE4MjAyNDIxODIsMTIwMzIxOTI0MywtOT
+gyMDY5NDkwLDQzNjkyOTI2MiwtNTE3MTA2MzYsLTExMzU1Njcy
+MzUsLTgxNzQ3MzQ5NSwxNDUzNzU1OTI0LDE1NDMzMzE2MTQsMj
+EyMjcwNzk3NCwtMTI3MDMyMTEyOSwtMTkyMzc2MTk2MCwyNzA0
+Mzk2MzgsLTQ4NDg2MTEzOSwxMTI0MzM0NjMxLC05NTU4MDU4ND
+EsLTIwOTY3ODkyMjAsMTA1OTg5Mjk1MCwyMDgzNjc0OTMsMTAy
+NTg1NTczNV19
 -->
