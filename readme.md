@@ -13,7 +13,7 @@ A brief explanation of the main results follows
  - **SAT/UNSAT transition**: From ![gammac](https://github.com/stecrotti/xorsat/blob/master/latex/gammac.gif?raw=true) (~0.92 for p=3) up,  the core contains more constraints than variables and the probability of an instance being satisfiable becomes exponentially small ![core](https://github.com/stecrotti/xorsat/blob/master/images/core.png?raw=true "Core")
  
  ### Energy
- Energy in the p-spin Ising model corresponds to the number of unsatisfied constraints in the XOR-SAT formula. For ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma)  < ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d), all solutions are concentrated in one cluster, meaning that each one can be reached from any other with a finite number of spin flips. In this regime BP, which is a local algorithm, is able to find solutions. Instead, for ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d) < ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma) < ![gammac](https://latex.codecogs.com/gif.latex?%5Cgamma_c) , systems are still solvable, but solutions are scattered into an extensive (with respect to N) number of clusters, therefore more sophisticated techniques such as Survey Propagation are required in order
+ Energy in the p-spin Ising model corresponds to the number of unsatisfied constraints in the XOR-SAT formula. For ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma)  < ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d), all solutions are concentrated in one cluster, meaning that each one can be reached from any other with a finite number of spin flips. In this regime BP, which is a local algorithm, is able to find solutions. Instead, for ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d) < ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma) < ![gammac](https://github.com/stecrotti/xorsat/blob/master/latex/gammac.gif?raw=true) , systems are still solvable, but solutions are scattered into an extensive (with respect to N) number of clusters, therefore more sophisticated techniques such as Survey Propagation are required in order
 to approximate the actual behavior.
 ![energy](https://github.com/stecrotti/xorsat/blob/master/images/energy_light.png?raw=true  "Energy")
  
@@ -32,11 +32,11 @@ to approximate the actual behavior.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjIzNDkxMjEsLTE4MjAyNDIxODIsMT
-IwMzIxOTI0MywtOTgyMDY5NDkwLDQzNjkyOTI2MiwtNTE3MTA2
-MzYsLTExMzU1NjcyMzUsLTgxNzQ3MzQ5NSwxNDUzNzU1OTI0LD
-E1NDMzMzE2MTQsMjEyMjcwNzk3NCwtMTI3MDMyMTEyOSwtMTky
-Mzc2MTk2MCwyNzA0Mzk2MzgsLTQ4NDg2MTEzOSwxMTI0MzM0Nj
-MxLC05NTU4MDU4NDEsLTIwOTY3ODkyMjAsMTA1OTg5Mjk1MCwy
-MDgzNjc0OTNdfQ==
+eyJoaXN0b3J5IjpbOTY3ODE4NTAwLC0xODIwMjQyMTgyLDEyMD
+MyMTkyNDMsLTk4MjA2OTQ5MCw0MzY5MjkyNjIsLTUxNzEwNjM2
+LC0xMTM1NTY3MjM1LC04MTc0NzM0OTUsMTQ1Mzc1NTkyNCwxNT
+QzMzMxNjE0LDIxMjI3MDc5NzQsLTEyNzAzMjExMjksLTE5MjM3
+NjE5NjAsMjcwNDM5NjM4LC00ODQ4NjExMzksMTEyNDMzNDYzMS
+wtOTU1ODA1ODQxLC0yMDk2Nzg5MjIwLDEwNTk4OTI5NTAsMjA4
+MzY3NDkzXX0=
 -->
