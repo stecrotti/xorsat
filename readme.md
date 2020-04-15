@@ -10,7 +10,7 @@ A brief explanation of the main results follows
  Recursively remove from the graph all leaves and the factors (also called hyperedges) they are attached to, until there is none left. The subgraph resulting at the end, called *core*, is the frozen part of the graph, formed by those variable whose value is forced by the rigidness of the system.
  The density ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma) is the ratio of number of constraints and number of variables. As the density varies from 0 to 1 and beyond, the system undergoes two phase transitions
  - **Dynamic transition**: At some density ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d) (~0.82 for p=3), the core size jumps from 0 to a value extensive with N, the number of variables 
- - **SAT/UNSAT transition**: From![gammac](https://latex.codecogs.com/gif.latex?%5Cgamma_c) (~0.92 for p=3) up,  the core contains more constraints than variables and the probability of an instance being satisfiable becomes exponentially small ![core](https://github.com/stecrotti/xorsat/blob/master/images/core.png?raw=true "Core")
+ - **SAT/UNSAT transition**: From ![gammac](https://latex.codecogs.com/gif.latex?%5Cgamma_c) (~0.92 for p=3) up,  the core contains more constraints than variables and the probability of an instance being satisfiable becomes exponentially small ![core](https://github.com/stecrotti/xorsat/blob/master/images/core.png?raw=true "Core")
  
  ### Energy
  Energy in the p-spin Ising model corresponds to the number of unsatisfied constraints in the XOR-SAT formula. For ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma)  < ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d), all solutions are concentrated in one cluster, meaning that each one can be reached from any other with a finite number of spin flips. In this regime BP, which is a local algorithm, is able to find solutions. Instead, for ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d) < ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma) < ![gammac](https://latex.codecogs.com/gif.latex?%5Cgamma_c), systems are still solvable, but solutions are scattered into an extensive (with respect to N) number of clusters, therefore more sophisticated techniques such as Survey Propagation are required in order
@@ -30,10 +30,10 @@ to approximate the actual behavior.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNzEwNjM2LC0xMTM1NTY3MjM1LC04MT
-c0NzM0OTUsMTQ1Mzc1NTkyNCwxNTQzMzMxNjE0LDIxMjI3MDc5
-NzQsLTEyNzAzMjExMjksLTE5MjM3NjE5NjAsMjcwNDM5NjM4LC
-00ODQ4NjExMzksMTEyNDMzNDYzMSwtOTU1ODA1ODQxLC0yMDk2
-Nzg5MjIwLDEwNTk4OTI5NTAsMjA4MzY3NDkzLDEwMjU4NTU3Mz
-VdfQ==
+eyJoaXN0b3J5IjpbNDM2OTI5MjYyLC01MTcxMDYzNiwtMTEzNT
+U2NzIzNSwtODE3NDczNDk1LDE0NTM3NTU5MjQsMTU0MzMzMTYx
+NCwyMTIyNzA3OTc0LC0xMjcwMzIxMTI5LC0xOTIzNzYxOTYwLD
+I3MDQzOTYzOCwtNDg0ODYxMTM5LDExMjQzMzQ2MzEsLTk1NTgw
+NTg0MSwtMjA5Njc4OTIyMCwxMDU5ODkyOTUwLDIwODM2NzQ5My
+wxMDI1ODU1NzM1XX0=
 -->
