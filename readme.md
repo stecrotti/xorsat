@@ -15,7 +15,7 @@ A brief explanation of the main results follows
  ### Energy
  Energy in the p-spin Ising model corresponds to the number of unsatisfied constraints in the XOR-SAT formula. For ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma)  < ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d), all solutions are concentrated in one cluster, meaning that each one can be reached from any other with a finite number of spin flips. In this regime BP, which is a local algorithm, is able to find solutions. Instead, for ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d) < ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma) < ![gammac](https://latex.codecogs.com/gif.latex?%5Cgamma_c), systems are still solvable, but solutions are scattered into an extensive (with respect to N) number of clusters, therefore more sophisticated techniques such as Survey Propagation are required in order
 to approximate the actual behavior.
-![energy](https://github.com/stecrotti/xorsat/blob/master/images/energy.png?raw=true  "Energy")
+![energy](https://github.com/stecrotti/xorsat/blob/master/images/energy_light.png?raw=true  "Energy")
  
  ------------
  ### Some links
@@ -30,9 +30,10 @@ to approximate the actual behavior.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzU1NjcyMzUsLTgxNzQ3MzQ5NSwxND
-UzNzU1OTI0LDE1NDMzMzE2MTQsMjEyMjcwNzk3NCwtMTI3MDMy
-MTEyOSwtMTkyMzc2MTk2MCwyNzA0Mzk2MzgsLTQ4NDg2MTEzOS
-wxMTI0MzM0NjMxLC05NTU4MDU4NDEsLTIwOTY3ODkyMjAsMTA1
-OTg5Mjk1MCwyMDgzNjc0OTMsMTAyNTg1NTczNV19
+eyJoaXN0b3J5IjpbLTUxNzEwNjM2LC0xMTM1NTY3MjM1LC04MT
+c0NzM0OTUsMTQ1Mzc1NTkyNCwxNTQzMzMxNjE0LDIxMjI3MDc5
+NzQsLTEyNzAzMjExMjksLTE5MjM3NjE5NjAsMjcwNDM5NjM4LC
+00ODQ4NjExMzksMTEyNDMzNDYzMSwtOTU1ODA1ODQxLC0yMDk2
+Nzg5MjIwLDEwNTk4OTI5NTAsMjA4MzY3NDkzLDEwMjU4NTU3Mz
+VdfQ==
 -->
