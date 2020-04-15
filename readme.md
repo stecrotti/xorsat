@@ -23,7 +23,7 @@ to approximate the actual behavior.
 - Phase transitions in combinatorial optimization [Simplest random K-satisfiability problem](https://arxiv.org/abs/cond-mat/0011181)
 - Survey Propagation [Survey propagation: an algorithm for satisfiability](https://arxiv.org/abs/cs/0212002)
 
-[gammac](https://latex.codecogs.com/gif.latex?%5Cgamma_c)
+[gammac]: (https://latex.codecogs.com/gif.latex?%5Cgamma_c)
  
  
 
@@ -32,7 +32,7 @@ to approximate the actual behavior.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MjExNzk0MiwtOTgyMDY5NDkwLDQzNj
+eyJoaXN0b3J5IjpbMTU4MjIwMDY3NiwtOTgyMDY5NDkwLDQzNj
 kyOTI2MiwtNTE3MTA2MzYsLTExMzU1NjcyMzUsLTgxNzQ3MzQ5
 NSwxNDUzNzU1OTI0LDE1NDMzMzE2MTQsMjEyMjcwNzk3NCwtMT
 I3MDMyMTEyOSwtMTkyMzc2MTk2MCwyNzA0Mzk2MzgsLTQ4NDg2
