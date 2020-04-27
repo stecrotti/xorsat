@@ -4,18 +4,18 @@ It is based on [M. Mézard, F. Ricci-Tersenghi, R. Zecchina, *Two Solutions to D
 and XORSAT Problems*, Journal of Statistical Physics, 2003](http://chimera.roma1.infn.it/FEDERICO/Publications_files/2003_JSP_111_505.pdf).
 
 Belief Propagation equations are implemented in their Min-Sum form to look for solutions to XOR-SAT instances drawn from a random ensemble in the thermodynamic limit of ![Ninf](https://latex.codecogs.com/gif.latex?N%5Crightarrow%20%5Cinfty) variables. 
-The problem is equivalent to that of finding the Ground State for a p-spin Ising model (an Ising model where spins interact not in pairs but in p-uples) defined of a factor graph.
+The problem is equivalent to that of finding the Ground State for a p-spin Ising model (an Ising model where spins interact not in pairs but in p-uples) defined over a factor graph.
 A brief explanation of the main results follows
 ### Leaf Removal algorithm
- Recursively remove from the graph all leaves and the factors (also called hyperedges) they are attached to, until there is none left. The subgraph resulting at the end, called *core*, is the frozen part of the graph, formed by those variable whose value is forced by the rigidness of the system.
- The density ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma) is the ratio of number of constraints and number of variables. As the density varies from 0 to 1 and beyond, the system undergoes two phase transitions
- - **Dynamic transition**: At some density ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d) (~0.82 for p=3), the core size jumps from 0 to a value extensive with N, the number of variables 
- - **SAT/UNSAT transition**: From ![gammac](https://latex.codecogs.com/gif.latex?%5Cgamma_c) (~0.92 for p=3) up,  the core contains more constraints than variables and the probability of an instance being satisfiable becomes exponentially small ![core](https://github.com/stecrotti/xorsat/blob/master/images/core.png?raw=true "Core")
+ Recursively remove from the graph all leaves and the factors (also called hyperedges) they are attached to, until there is no leaf left. The subgraph resulting at the end, called *core*, is the frozen part of the graph, formed by those variable whose value is forced by the rigidness of the system.
+ The density ![gamma](https://github.com/stecrotti/xorsat/blob/master/latex/gamma.gif?raw=true) is the ratio of number of constraints and number of variables. As the density varies from 0 to 1 and beyond, the system undergoes two phase transitions
+ - **Dynamic transition**: At some density ![gammad](https://github.com/stecrotti/xorsat/blob/master/latex/gammad.gif?raw=true) (~0.82 for p=3), the core size jumps from 0 to a value extensive with N, the number of variables 
+ - **SAT/UNSAT transition**: From ![gammac](https://github.com/stecrotti/xorsat/blob/master/latex/gammac.gif?raw=true) (~0.92 for p=3) up,  the core contains more constraints than variables and the probability of an instance being satisfiable becomes exponentially small ![core](https://github.com/stecrotti/xorsat/blob/master/images/core.png?raw=true "Core")
  
  ### Energy
- Energy in the p-spin Ising model corresponds to the number of unsatisfied constraints in the XOR-SAT formula. For ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma)  < ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d), all solutions are concentrated in one cluster, meaning that each one can be reached from any other with a finite number of spin flips. In this regime BP, which is a local algorithm, is able to find solutions. Instead, for ![gammad](https://latex.codecogs.com/gif.latex?%5Cgamma_d) < ![gamma](https://latex.codecogs.com/gif.latex?%5Cgamma) < ![gammac](https://latex.codecogs.com/gif.latex?%5Cgamma_c) , systems are still solvable, but solutions are scattered into an extensive (with respect to N) number of clusters, therefore more sophisticated techniques such as Survey Propagation are required in order
+ Energy in the p-spin Ising model corresponds to the number of unsatisfied constraints in the XOR-SAT formula. For ![gamma](https://github.com/stecrotti/xorsat/blob/master/latex/gamma.gif?raw=true)  < ![gammad](https://github.com/stecrotti/xorsat/blob/master/latex/gammad.gif?raw=true), all solutions are concentrated in one cluster, meaning that each one can be reached from any other with a finite number of spin flips. In this regime BP, which is a local algorithm, is able to find solutions. Instead, for ![gammad](https://github.com/stecrotti/xorsat/blob/master/latex/gammad.gif?raw=true) < ![gamma](https://github.com/stecrotti/xorsat/blob/master/latex/gamma.gif?raw=true) < ![gammac](https://github.com/stecrotti/xorsat/blob/master/latex/gammac.gif?raw=true) , systems are still solvable, but solutions are scattered into an extensive (with respect to N) number of clusters, therefore more sophisticated techniques such as Survey Propagation are required in order
 to approximate the actual behavior.
-![energy](https://github.com/stecrotti/xorsat/blob/master/images/energy_light.png?raw=true  "Energy")
+![energy](https://github.com/stecrotti/xorsat/blob/master/images/energyo.png?raw=true  "Energy")
  
  ------------
  ### Some links
@@ -32,11 +32,11 @@ to approximate the actual behavior.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjAyNDIxODIsMTIwMzIxOTI0MywtOT
-gyMDY5NDkwLDQzNjkyOTI2MiwtNTE3MTA2MzYsLTExMzU1Njcy
-MzUsLTgxNzQ3MzQ5NSwxNDUzNzU1OTI0LDE1NDMzMzE2MTQsMj
-EyMjcwNzk3NCwtMTI3MDMyMTEyOSwtMTkyMzc2MTk2MCwyNzA0
-Mzk2MzgsLTQ4NDg2MTEzOSwxMTI0MzM0NjMxLC05NTU4MDU4ND
-EsLTIwOTY3ODkyMjAsMTA1OTg5Mjk1MCwyMDgzNjc0OTMsMTAy
-NTg1NTczNV19
+eyJoaXN0b3J5IjpbLTU0ODU0Njk1OSwxNjEyNzU5MjY5LC0xMT
+cxODAzMzY1LC0zNTQ3MDE4ODgsMTM4ODcyMDIyMSw5Njc4MTg1
+MDAsLTE4MjAyNDIxODIsMTIwMzIxOTI0MywtOTgyMDY5NDkwLD
+QzNjkyOTI2MiwtNTE3MTA2MzYsLTExMzU1NjcyMzUsLTgxNzQ3
+MzQ5NSwxNDUzNzU1OTI0LDE1NDMzMzE2MTQsMjEyMjcwNzk3NC
+wtMTI3MDMyMTEyOSwtMTkyMzc2MTk2MCwyNzA0Mzk2MzgsLTQ4
+NDg2MTEzOV19
 -->
