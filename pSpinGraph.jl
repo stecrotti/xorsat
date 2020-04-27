@@ -83,7 +83,7 @@ end
 function gf2rank(H::Union{BitArray{2},Array{Int,2}})
     m,n = size(H)
     gf2ref!(H)
-    return m - count(isequal(zeros(eltype(H),n)), H[r,:] for r in 1:m)
+    return m - count(isequal(zeros(eltype(H),n)), eachrow(H))
 end
 
 function gf2rref!(H::Array{Int,2})

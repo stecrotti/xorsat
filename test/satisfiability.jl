@@ -1,14 +1,12 @@
 include("../headers.jl")
 using UnicodePlots
 using PyPlot
+using DelimitedFiles
 
-γvals = LinRange(0.6,1.5,20)
-# nvals = Int.([1e2, 1e3, 1e4])
-nvals = [8, 32, 128]
+γvals = LinRange(0.75,1.25,17)
+nvals = 2 .^ [5,6,7]
 p = 3
-# navg = 100
-navg = 500
-k = 1e-3
+navg = 1000
 
 sat = [zeros(length(γvals)) for _ in eachindex(nvals)]
 
@@ -24,16 +22,16 @@ for (i,n) in enumerate(nvals)
     println("  n=$(n) completed")
 end
 
-PyPlot.close("all")
+close("all")
 for (i,n) in enumerate(nvals)
-    plot(γvals, sat[i], "o-", markersize=4, linewidth=1)
+    plt.plot(γvals, sat[i], "o-", markersize=4, linewidth=1)
 end
-
-plt.:title = "Fraction of solvable instances"
-plt.:xlabel = "γ"
-plt.:ylabel = "Fraction of solvable instances"
-plt.:legend("n = " .* string.(nvals))
-plt.savefig("../images/satisfiability.png")
+# figure("sat")
+plt.:title("Fraction of solvable instances")
+plt.:xlabel("γ")
+plt.:ylabel("Fraction of solvable instances")
+plt.:legend("N = " .* string.(nvals))
+plt.savefig("../images/sat.png")
 
 
 for (i,n) in enumerate(nvals)
@@ -42,11 +40,14 @@ for (i,n) in enumerate(nvals)
         title = "Fraction of solvable instances",
         name = "n="*string(nvals[i]),
         xlabel = "γ", canvas = DotCanvas)
-    end
-    if i > 1
+    elseif i > 1
         lineplot!(myplt, γvals, sat[i],
         name = "n="*string(nvals[i]))
     end
+end
+
+open("sat.txt", "w") do io
+   writedlm(io, sat)
 end
 
 print("\a")
