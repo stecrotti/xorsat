@@ -15,13 +15,14 @@ A brief explanation of the main results follows
  ### Energy
  Energy in the p-spin Ising model corresponds to the number of unsatisfied constraints in the XOR-SAT formula. For ![gamma](https://github.com/stecrotti/xorsat/blob/master/latex/gamma.gif?raw=true)  < ![gammad](https://github.com/stecrotti/xorsat/blob/master/latex/gammad.gif?raw=true), all solutions are concentrated in one cluster, meaning that each one can be reached from any other with a finite number of spin flips. In this regime BP, which is a local algorithm, is able to find solutions. Instead, for ![gammad](https://github.com/stecrotti/xorsat/blob/master/latex/gammad.gif?raw=true) < ![gamma](https://github.com/stecrotti/xorsat/blob/master/latex/gamma.gif?raw=true) < ![gammac](https://github.com/stecrotti/xorsat/blob/master/latex/gammac.gif?raw=true) , systems are still solvable, but solutions are scattered into an extensive (with respect to N) number of clusters, therefore more sophisticated techniques such as Survey Propagation are required in order
 to approximate the actual behavior.
+
 ![energy](https://github.com/stecrotti/xorsat/blob/master/images/energy.png?raw=true  "Energy")
  
  ------------
  ### Some links
- - Julia Language [Julia](https://julialang.org/)
-- Phase transitions in combinatorial optimization [Simplest random K-satisfiability problem](https://arxiv.org/abs/cond-mat/0011181)
-- Survey Propagation [Survey propagation: an algorithm for satisfiability](https://arxiv.org/abs/cs/0212002)
+ - Julia Language: [Julia](https://julialang.org/)
+- Phase transitions in combinatorial optimization: ["Simplest random K-satisfiability problem"](https://arxiv.org/abs/cond-mat/0011181)
+- Survey Propagation: ["Survey propagation: an algorithm for satisfiability"](https://arxiv.org/abs/cs/0212002)
 
 
  
@@ -32,5 +33,5 @@ to approximate the actual behavior.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNjE5ODUwNF19
+eyJoaXN0b3J5IjpbMzM0MDk4Mzk4XX0=
 -->
