@@ -1,8 +1,9 @@
+# Convert spin variable to boolean
 function spin2bool(s::Real)
     return convert(Bool,(s+1)/2)
 end
 
-# returns a random subset of 1:N, of size p, with no repetitions
+# Return a random subset of 1:N, of size p, no repetitions
 function randsubset(n::Int, p::Int, vec=collect(1:N))
     n < p && error("Susbet size cannot be larger than n")
     output = zeros(Int,p)
@@ -14,7 +15,7 @@ function randsubset(n::Int, p::Int, vec=collect(1:N))
     return output
 end
 
-# constructs a factor graph for a random instance of the pspin problem
+# Construct a factor graph for a random instance of the p-spin problem
 function pspingraph(n::Int, m::Int, p::Int; sigma=1e-5)
     # vector vec (used in subroutine rand_subset) is passed as argument -> no
     #  need to create it each time pspingraph is called
@@ -38,6 +39,10 @@ function pspingraph(n::Int, m::Int, p::Int; sigma=1e-5)
     end
     return FactorGraph(n, m, Vneigs ,Fneigs, J, h, mfv, b)
 end
+
+
+### GAUSSIAN ELIMINATION ON GF(2)
+# Reduce to Echelon form and compute the rank to determine whether the system is solvable
 
 function gf2ref!(H::BitArray{2})
     m,n = size(H)
