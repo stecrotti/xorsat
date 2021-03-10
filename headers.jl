@@ -1,4 +1,4 @@
-using Random
+using Random, OffsetArrays
 
 include("FactorGraph.jl")
 include("pSpinGraph.jl")
