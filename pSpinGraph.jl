@@ -1,12 +1,17 @@
+# Convert spin variable to boolean
 function spin2bool(s::Real)
     return convert(Bool,(s+1)/2)
 end
 
+<<<<<<< HEAD
 function spin2int(s::Real)
     return convert(int,(s+1)/2)
 end
 
 # returns a random subset of 1:N, of size p, with no repetitions
+=======
+# Return a random subset of 1:N, of size p, no repetitions
+>>>>>>> 4c3b4e0b31f9a26b0a94b285bbee58219b656e64
 function randsubset(n::Int, p::Int, vec=collect(1:N))
     n < p && error("Susbet size cannot be larger than n")
     output = zeros(Int,p)
@@ -18,7 +23,7 @@ function randsubset(n::Int, p::Int, vec=collect(1:N))
     return output
 end
 
-# constructs a factor graph for a random instance of the pspin problem
+# Construct a factor graph for a random instance of the p-spin problem
 function pspingraph(n::Int, m::Int, p::Int; sigma=1e-5)
     # vector vec (used in subroutine rand_subset) is passed as argument -> no
     #  need to create it each time pspingraph is called
@@ -44,6 +49,7 @@ function pspingraph(n::Int, m::Int, p::Int; sigma=1e-5)
 end
 
 
+<<<<<<< HEAD
 function issolvable(H::Array{Int,2}, J::Vector{Int})
     gf2mult = OffsetArray([0 0; 0 1], 0:1, 0:1)
     gf2div = OffsetArray([0;1], 0:1, 1:1)
@@ -173,6 +179,10 @@ function gftables(q::Int, arbitrary_mult::Bool=false)
 end
 
 ####### OLD STUFF, PROBABLY NOT WORKING
+=======
+### GAUSSIAN ELIMINATION ON GF(2)
+# Reduce to Echelon form and compute the rank to determine whether the system is solvable
+>>>>>>> 4c3b4e0b31f9a26b0a94b285bbee58219b656e64
 
 function gf2ref!(H::BitArray{2})
     m,n = size(H)

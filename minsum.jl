@@ -17,10 +17,12 @@ function msiter!(FG::FactorGraph)
     return guesses(FG)
 end
 
+# Return guesses for each variable's value
 function guesses(FG::FactorGraph)
     return sign.(FG.b)
 end
 
+# Min-Sum algo
 function ms!(FG::FactorGraph; maxiter=Int(1e4), nmin=10,
     k=0.0) # Soft decimation factor
     newguesses = zeros(FG.n)
@@ -43,6 +45,7 @@ function ms!(FG::FactorGraph; maxiter=Int(1e4), nmin=10,
     return :unconverged, maxiter
 end
 
+# Find the ground state and return its energy
 function energy(FG::FactorGraph, x=guesses(FG))
     return reduce(+,1 - FG.J[f]*prod(x[v] for v in FG.Fneigs[f])
         for f in eachindex(FG.Fneigs) if factdegree(FG,f)>0; init=0.0)
