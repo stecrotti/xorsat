@@ -21,13 +21,13 @@ function FactorGraph(n::Int, m::Int)
 end
 
 function adjmat(FG::FactorGraph)
-    A = zeros(Int,FG.m, FG.n)
+    H=zeros(Int,FG.m, FG.n)
     for f in 1:FG.m
         for v in FG.Fneigs[f]
-            A[f,v] = 1
+            H[f,v] = 1
         end
     end
-    return A
+    return H
 end
 
 function Base.show(io::IO, FG::FactorGraph)
